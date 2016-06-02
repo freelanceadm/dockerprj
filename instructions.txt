@@ -26,3 +26,14 @@ Now copy all these text from "ssh-rsa ... youraccountname@hostname"
 Open your repository settings on github - Deploy keys - Add key
 And paste your key. Set Allow write access and click Add key.
 Now you cat git pull to remote repostitory from your local repo.
+
+For example I create this project using these commands (after key was added).
+~/project1$ git remote add origin git@github.com:freelanceadm/dockerprj.git
+~/project1$ git push origin master
+Counting objects: 10, done.
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 3.59 KiB | 0 bytes/s, done.
+Total 10 (delta 0), reused 0 (delta 0)
+To git@github.com:freelanceadm/dockerprj.git
+ * [new branch]      master -> master
+

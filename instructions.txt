@@ -28,6 +28,12 @@ And paste your key. Set Allow write access and click Add key.
 Now you cat git pull to remote repostitory from your local repo.
 
 For example I create this project using these commands (after key was added).
+$ cd project1
+$ git init
+$ git add *
+$  git config --global user.email "your@email.com"
+$  git config --global user.name "username"
+$ git commit -a -m "Fist commit"
 ~/project1$ git remote add origin git@github.com:freelanceadm/dockerprj.git
 ~/project1$ git push origin master
 Counting objects: 10, done.

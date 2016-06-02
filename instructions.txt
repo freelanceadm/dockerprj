@@ -1,22 +1,22 @@
-Get scripts from github.
+### 1 Get scripts from github.
 apt-get update
 apt-get install git
 git clone https://github.com/freelanceadm/dockerprj.git
 cd dockerprj/
 
-Deploy
-1 Here is deploy scripts. Run start.sh as root.
+### 2 Deploy
+### 2.1 Here is deploy scripts. Run start.sh as root.
 	sudo ./start.sh
 
-2 It will create docker container. And directory for ftp and all your applications.
+### 2.2 It will create docker container. And directory for ftp and all your applications.
 	/opt/apps	
 
-3 During run it ask you for your ftp password and ftp login and mysql password.
+### 3 During run it ask you for your ftp password and ftp login and mysql password.
 After setup you will all your settings on console. I cannot save these setting in script,
 becouse everyone can read documents/files on github.
 
 
-Github. How to sync code.
+### 4 Github. How to sync code.
 Create repository on github.
 On linux server create RSA keys. Do not enter pass phrase
 	ssh-keygen

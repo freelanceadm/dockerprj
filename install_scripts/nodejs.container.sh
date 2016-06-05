@@ -7,7 +7,7 @@ FROM node:argon
 RUN mkdir -p /usr/src/app
 RUN mkdir -p /data/db
 
-WORKDIR /usr/src/app/mongodb
+WORKDIR /usr/src/app
 
 # Install app dependencies
 #COPY package.json /usr/src/app/
@@ -26,4 +26,4 @@ CMD [ "/usr/bin/mongod" ]
 EOF
 
 docker build --rm -t nodejs-mongo .
-docker run --name nodejs-mongo --restart="always" -p 8080:6000 -m 756M --volume=${appdir}/mongodb:/data/db --volume=${appdir}/nodejs:/usr/src/app -d nodejs-mongo
+docker run --name nodejs-mongo --restart="always" -p 6000:8080 -m 756M --volume=${appdir}/mongodb:/data/db --volume=${appdir}/nodejs:/usr/src/app -d nodejs-mongo
